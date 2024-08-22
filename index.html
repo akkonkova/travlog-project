@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travlog site</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="page">
+    <div class="page__wrapper">
+      <!-- Website header with navigation and authorization -->
+      <header class="header">
+        <a class="logo">
+          <img class="header__logo-image" src="./images/logo.svg" alt="Travlog logo" />
+          <span class="header__logo-name">Travlog</span>
+        </a>
+        <nav class="header__menu">
+          <ul class="header__links-list">
+            <li class="header__links-list-item">
+              <a href="#0" class="header__link header__link-active">home</a>
+            </li>
+            <li class="header__links-list-item">
+              <a href="#0" class="header__link">discover</a>
+            </li>
+            <li class="header__links-list-item">
+              <a href="#0" class="header__link">special deals</a>
+            </li>
+            <li class="header__links-list-item">
+              <a href="#0" class="header__link">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__auth">
+          <button type="button" class="button">log in</button>
+          <button type="button" class="button button_primary">sign up</button>
+        </div>
+      </header>
+
+      <!-- Section with the project slogan and cover -->
+      <main>
+        <section class="cover">
+          <div class="cover__container">
+            <button type="button" class="button button_decorative">
+              Explore the world!<img
+                class="button__image"
+                src="./images/pink suitcase.svg"
+                alt="Pink suitcase"
+              />
+            </button>
+            <h1 class="cover__title">
+              Travel <span class="text-accent">top destination</span> of the world
+            </h1>
+            <span class="cover__description"
+              >We always make our customer happy by providing as many choices as possible</span
+            >
+            <div class="cover__button-container">
+              <button type="button" class="button button_shadow button_primary">get started</button>
+              <button type="button" class="button button_border">
+                <img
+                  class="button__image"
+                  src="./images/play-circle.svg"
+                  alt="Purple play button"
+                />watch demo
+              </button>
+            </div>
+          </div>
+          <div class="cover__image-container">
+            <img
+              class="cover__image"
+              src="./images/cover_image.png"
+              alt="Image with three miniatures about travel: a girl in a megalopolis, a girl in the mountains, a seascape opening from a coastal city"
+            />
+          </div>
+        </section>
+
+        <!-- Section with project partners' logos -->
+        <div class="partner">
+          <img class="partner__logo" src="./images/tripadvisor_logo.svg" alt="Tripadvisor logo" />
+          <img class="partner__logo" src="./images/expedia_logo.svg" alt="Expedia logo" />
+          <img class="partner__logo" src="./images/booking_logo.svg" alt="Booking.com logo" />
+          <img class="partner__logo" src="./images/airbnb_logo.svg" alt="Airbnb logo" />
+          <img class="partner__logo" src="./images/rbitz_logo.svg" alt="Rbitz logo" />
+        </div>
+
+        <!-- Section with top value categories -->
+        <section class="categories">
+          <div class="categories__text-container">
+            <p class="section-description">Services</p>
+            <h2 class="section-title">Our top value categories for you</h2>
+          </div>
+          <ul class="categories__card-list">
+            <li class="card">
+              <img src="./images/destination.svg" alt="" class="card__icon" />
+              <div class="card__text-container">
+                <h3 class="card__title">Best Tour Guide</h3>
+                <p class="card__text">
+                  What looked like a small patch of purple grass, above five feet.
+                </p>
+              </div>
+            </li>
+            <li class="card card_shadow">
+              <img src="./images/booking.svg" alt="" class="card__icon" />
+              <div class="card__text-container">
+                <h3 class="card__title">Easy Booking</h3>
+                <p class="card__text">Square, was moving across the sand in their direction.</p>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/cloudy.svg" alt="" class="card__icon" />
+              <div class="card__text-container">
+                <h3 class="card__title">Weather Forecast</h3>
+                <p class="card__text">
+                  What looked like a small patch of purple grass, above five feet.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section with top destinations -->
+        <section class="destination">
+          <div class="destination__header-container">
+            <div class="destination__section-title">
+              <p class="section-description">Top Destination</p>
+              <h2 class="section-title">Explore top destination</h2>
+            </div>
+            <div class="destination__button-container">
+              <div class="swiper-button">
+                <img
+                  src="./images/arrow_black 1.svg"
+                  alt="left control button"
+                  class="swiper-button__arrow"
+                />
+              </div>
+              <div class="swiper-button swiper-button_primary">
+                <img
+                  src="./images/arrow_white.svg"
+                  alt="right control button"
+                  class="swiper-button__arrow"
+                />
+              </div>
+            </div>
+          </div>
+          <ul class="destination__image-card-list">
+            <li class="image-card">
+              <img src="./images/beach pic.png" alt="Beach image" class="image-card__image" />
+              <div class="destination__image-card-content">
+                <div class="destination__image-card-text-container">
+                  <span class="image-card__title">Paradise Beach, Bantayan Island</span>
+                  <span class="image-card__text-price">$550.16</span>
+                </div>
+                <span class="image-card__text">Rome, Italy</span>
+                <div class="image-card__rating-container">
+                  <span class="image-card__rating-text">4.8</span>
+                  <img
+                    src="./images/star rating.svg"
+                    alt="orange icon of star"
+                    class="image-card__rating-icon"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="image-card">
+              <img src="./images/fish pic.png" alt="Beach image" class="image-card__image" />
+              <div class="destination__image-card-content">
+                <div class="destination__image-card-text-container">
+                  <span class="image-card__title">Ocean with full of Colors</span>
+                  <span class="image-card__text-price">$20.99</span>
+                </div>
+                <span class="image-card__text">Maldives</span>
+                <div class="image-card__rating-container">
+                  <span class="image-card__rating-text">4.5</span>
+                  <img
+                    src="./images/star rating.svg"
+                    alt="orange icon of star"
+                    class="image-card__rating-icon"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="image-card">
+              <img src="./images/mountain pic.png" alt="Beach image" class="image-card__image" />
+              <div class="destination__image-card-content">
+                <div class="destination__image-card-text-container">
+                  <span class="image-card__title">Mountain View, Above the cloud</span>
+                  <span class="image-card__text-price">$150.99</span>
+                </div>
+                <span class="image-card__text">United Arab Emirates</span>
+                <div class="image-card__rating-container">
+                  <span class="image-card__rating-text">5.0</span>
+                  <img
+                    src="./images/star rating.svg"
+                    alt="orange icon of star"
+                    class="image-card__rating-icon"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Section about advantages that helping find dream location-->
+        <section class="advantages">
+          <img
+            src="./images/girl-travel.png"
+            alt="A joyful girl is sitting on a suitcase"
+            class="advantages__image"
+          />
+          <div class="advantages__wrapper">
+            <div class="advantages__content">
+              <div class="advantages__content-container">
+                <p class="section-description">Travel point</p>
+                <h2 class="section-title">We helping you find your dream location</h2>
+              </div>
+              <p class="section-text">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                piece of classical Latin literature from 45 BC.
+              </p>
+            </div>
+            <div class="advantages__info-card-list">
+              <div class="info-card">
+                <span class="info-card__title">500+</span>
+                <span class="info-card__description">Holiday Package</span>
+              </div>
+              <div class="info-card">
+                <span class="info-card__title">100</span>
+                <span class="info-card__description">Luxury Hotel</span>
+              </div>
+              <div class="info-card">
+                <span class="info-card__title">7</span>
+                <span class="info-card__description">Premium Airlines</span>
+              </div>
+              <div class="info-card">
+                <span class="info-card__title">2k+</span>
+                <span class="info-card__description">Happy Customer</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
