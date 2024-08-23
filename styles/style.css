@@ -131,6 +131,13 @@
   background: var(--primary-button, purple);
 }
 
+.button_square {
+  border-radius: 32px;
+  padding-inline: 64px;
+  padding-block: 32px;
+  font-size: 23px;
+}
+
 /* Styles for cover section */
 
 .cover {
@@ -298,6 +305,10 @@
   font-weight: 700;
   font-size: 44px;
   line-height: 120%;
+}
+
+.section-title_big {
+  font-size: 55px;
 }
 
 .categories__card-list {
@@ -835,14 +846,112 @@
   background: var(--accent-color);
 }
 
+/* Styles for subscribe section */
+
+.subscribe {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin-inline: 165px;
+  margin-block-start: 128px;
+  border-radius: 32px;
+  padding-inline: 64px;
+  padding-block: 128px;
+  background: rgba(250 205 73 / 0.08);
+}
+
+.subscribe::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -46px;
+  width: 184px;
+  height: 176px;
+  background-image: url(../images/red-dots.svg);
+}
+
+.subscribe::after {
+  content: '';
+  position: absolute;
+  right: -383px;
+  bottom: -182px;
+  width: 332px;
+  height: 352px;
+  background-image: url(../images/abstract-star.svg);
+}
+
+.subscribe__section-title {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  min-inline-size: 982px;
+}
+
+.subscribe__form-input-container {
+  position: relative;
+  display: flex;
+  flex: 1 0 0;
+}
+
+.subscribe__form-input {
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  border: none;
+  border-radius: 32px;
+  padding-inline-start: 80px;
+  padding-inline-end: 32px;
+  padding-block: 32px;
+  color: rgba(25 24 37 / 0.75);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+
+.subscribe__form-input-container::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  z-index: 1;
+  padding-inline-end: 16px;
+  background: url(../images/email_icon.svg);
+  inline-size: 32px;
+  block-size: 32px;
+}
+
 /* Styles for website footer */
 
 .footer {
   display: flex;
   align-items: flex-start;
-  gap: 153px;
-  margin-block-start: 128px;
-  padding-inline: 165px;
+  gap: 148px;
+  margin-block-start: 134px;
+  padding-inline: 170px;
   padding-block-end: 86px;
 }
 
