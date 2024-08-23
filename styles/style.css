@@ -61,16 +61,14 @@
   text-decoration: none;
 }
 
-.header__logo-image {
+.logo__image {
   width: 40px;
   height: 40px;
-  inline-size: 100%;
-  block-size: 100%;
 }
 
-.header__logo-name {
+.logo__name {
   color: var(--black, black);
-  font-family: Gilroy, sans-serif;
+  font-family: inherit;
   font-weight: 900;
   font-size: 24px;
   line-height: 166.667%;
@@ -92,7 +90,7 @@
 
 .header__link {
   color: var(--dull-color);
-  font-family: Gilroy, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 14px;
   line-height: 120%;
@@ -189,7 +187,7 @@
 
 .cover__title {
   color: #000;
-  font-family: Gilroy, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 69px;
   line-height: 120%;
@@ -284,7 +282,7 @@
 
 .section-description {
   color: var(--accent-color);
-  font-family: Gilroy, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 23px;
   line-height: 120%;
@@ -294,7 +292,7 @@
 
 .section-title {
   color: var(--black);
-  font-family: Gilroy, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 44px;
   line-height: 120%;
@@ -338,7 +336,7 @@
 
 .card__title {
   color: var(--black);
-  font-family: Gilroy, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 28px;
   line-height: 120%;
@@ -461,7 +459,7 @@
 .image-card__title {
   flex: 1 0 0;
   color: var(--black);
-  font-family: Gilroy, sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 23px;
   line-height: 120%;
@@ -504,34 +502,34 @@
   block-size: 24px;
 }
 
-/* Styles for section about advantages  */
+/* Styles for section about benefits  */
 
-.advantages {
+.benefits {
   display: flex;
   gap: 42px;
   margin-block-start: 128px;
   padding-inline-end: 165px;
 }
 
-.advantages__image {
+.benefits__image {
   inline-size: 790px;
   block-size: 697px;
 }
 
-.advantages__wrapper {
+.benefits__wrapper {
   display: flex;
   flex-direction: column;
   gap: 64px;
 }
 
-.advantages__content {
+.benefits__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
 }
 
-.advantages__content-container {
+.benefits__content-container {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -545,7 +543,7 @@
   line-height: 160%;
 }
 
-.advantages__info-card-list {
+.benefits__info-card-list {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(207px, 1fr));
@@ -582,7 +580,7 @@
   line-height: 160%;
 }
 
-.advantages__info-card-list::before {
+.benefits__info-card-list::before {
   content: '';
   position: absolute;
   top: -55px;
@@ -600,7 +598,7 @@
   block-size: 112px;
 }
 
-.advantages__info-card-list::after {
+.benefits__info-card-list::after {
   content: '';
   position: absolute;
   top: -15px;
@@ -609,6 +607,8 @@
   height: 36px;
   background-image: url(../images/ticket-star.svg);
 }
+
+/* Styles for key features section */
 
 .features {
   position: relative;
@@ -719,4 +719,118 @@
   block-size: 272px;
 }
 
+/* Styles for website footer */
 
+.footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 153px;
+  margin-block-start: 128px;
+  padding-block-end: 86px;
+  padding-inline: 165px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+  align-items: flex-start;
+}
+
+.footer__description {
+  padding-block-start: 32px;
+  padding-block-end: 64px;
+  color: var(--dull-color);
+  font-family: inherit;
+  font-weight: 450;
+  font-size: 23px;
+  font-style: normal;
+  line-height: 160%;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 32px;
+}
+
+.footer__about-company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.footer__section-title {
+  color: var(--black);
+  font-family: inherit;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.footer__section-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer__section-link-item {
+  color: rgba(25 24 37 / 0.75);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  list-style: none;
+}
+
+.footer__link {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.footer__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 121px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.footer__meet-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.footer__address {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__address-text {
+  color: rgba(25 24 37 / 0.75);
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+
+.footer__address-text_index {
+  text-transform: uppercase;
+}
